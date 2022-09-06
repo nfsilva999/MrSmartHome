@@ -1,0 +1,17 @@
+- id: '1662398560279'
+  alias: Alexa avisa luz
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: ddcf3fb43a238c7715433bbbc2276e26
+    entity_id: switch.shelly1_e8db84d73371
+    domain: switch
+  condition: []
+  action:
+  - service: notify.alexa_media_quarto
+    data:
+      message: <voice name='Ines'><lang xml:lang='pt-PT'>Atenção, luz ligada!</lang></voice>
+      data:
+        type: announce
+  mode: single
