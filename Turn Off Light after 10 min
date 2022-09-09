@@ -1,0 +1,20 @@
+- id: '1662713964932'
+  alias: Turno Off Light after 10 min
+  description: 'This automation turn off the shelly after 10 minutes'
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: ddcf3fb43a238c7715433bbbc2276e26
+    entity_id: switch.shelly1_e8db84d73371
+    domain: switch
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_off
+    device_id: ddcf3fb43a238c7715433bbbc2276e26
+    entity_id: switch.shelly1_e8db84d73371
+    domain: switch
+  mode: single
