@@ -1,0 +1,5 @@
+panel_iframe:
+  homer:
+    title: Farmacias
+    icon: mdi:view-dashboard
+    url: https://www.farmaciasdeservico.info/farm.php?did=1&cid=0109&fa=on&font=Arial&bgcolor=ffffff&cortitulo=222222&cordescricao=888888%22%20frameborder=%220%22%20allowtransparency=%22true%22%20
